@@ -2,7 +2,7 @@
 <resources>
     <string name="facebook_app_id">your_facebook_app_id</string>
     <string name="facebook_client_token">your_facebook_client_token</string>
-    <string name="admob_id">your_android_app_admob_app_id</string>
+    <string name="admob_id">ca-app-pub-7227946392033297~8556532580</string>
     <string name="google_map_id">your_google_map_id</string>
 
     <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
