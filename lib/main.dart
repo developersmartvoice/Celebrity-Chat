@@ -149,17 +149,17 @@ Future<void> main() async {
       ],
       debug: true);
 
-  runApp(Phoenix(child: const SocialifiedApp()));
+  runApp(Phoenix(child: const celebritychatApp()));
 }
 
-class SocialifiedApp extends StatefulWidget {
-  const SocialifiedApp({Key? key}) : super(key: key);
+class celebritychatApp extends StatefulWidget {
+  const celebritychatApp({Key? key}) : super(key: key);
 
   @override
-  State<SocialifiedApp> createState() => _SocialifiedAppState();
+  State<celebritychatApp> createState() => _celebritychatAppState();
 }
 
-class _SocialifiedAppState extends State<SocialifiedApp> {
+class _celebritychatAppState extends State<celebritychatApp> {
   @override
   void initState() {
     super.initState();

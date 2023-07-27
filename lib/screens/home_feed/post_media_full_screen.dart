@@ -56,7 +56,7 @@ class _PostMediaFullScreenState extends State<PostMediaFullScreen> {
 
   Widget videoPostTile(PostGallery media) {
     return Center(
-      child: SocialifiedVideoPlayer(
+      child: celebritychatVideoPlayer(
         url: media.filePath,
         // isLocalFile: false,
         play: false,

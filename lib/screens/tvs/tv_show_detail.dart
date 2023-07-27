@@ -74,7 +74,6 @@ class _TVShowDetailState extends State<TVShowDetail> {
                       height: 50,
                     ),
                     backNavigationBar(
-                      
                       title: widget.showModel.name!,
                     ),
                     divider().tP8,
@@ -82,7 +81,7 @@ class _TVShowDetailState extends State<TVShowDetail> {
                 ),
               Obx(() {
                 return _liveTvStreamingController.selectedEpisode.value != null
-                    ? SocialifiedVideoPlayer(
+                    ? celebritychatVideoPlayer(
                         tvModel: widget.tvModel,
                         url: _liveTvStreamingController
                             .selectedEpisode.value!.videoUrl!,

@@ -48,7 +48,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.socialified"
+        applicationId "com.smartvoice.celebritychat"
         minSdkVersion 24
         targetSdkVersion 33
         versionCode flutterVersionCode.toInteger()

@@ -99,7 +99,7 @@ class _TVChannelDetailState extends State<TVChannelDetail> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             widget.tvModel.isLiveBroadcasting == true
-                                ? SocialifiedVideoPlayer(
+                                ? celebritychatVideoPlayer(
                                     tvModel: widget.tvModel,
                                     url: widget.tvModel.tvUrl,
                                     play: true,
@@ -128,16 +128,14 @@ class _TVChannelDetailState extends State<TVChannelDetail> {
                                       trimLines: 2,
                                       trimMode: read_more.TrimMode.Line,
                                       colorClickableText: Colors.white,
-                                      trimCollapsedText:
-                                          showMoreString.tr,
+                                      trimCollapsedText: showMoreString.tr,
                                       trimExpandedText:
                                           '    ${showLessString.tr}',
-
                                       style: TextStyle(
                                           fontSize: FontSizes.b2,
                                           fontWeight: TextWeight.regular,
                                           color:
-                                          AppColorConstants.grayscale900),
+                                              AppColorConstants.grayscale900),
                                       moreStyle: TextStyle(
                                           fontSize: FontSizes.b2,
                                           fontWeight: TextWeight.bold,

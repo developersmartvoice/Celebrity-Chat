@@ -6,14 +6,14 @@ import '../controllers/live_tv_streaming_controller.dart';
 import '../model/live_tv_model.dart';
 import '../screens/settings_menu/settings_controller.dart';
 
-class SocialifiedVideoPlayer extends StatefulWidget {
+class celebritychatVideoPlayer extends StatefulWidget {
   final String url;
   final bool play;
   final TvModel? tvModel;
   final Orientation orientation;
   final bool? isPlayingTv;
 
-  const SocialifiedVideoPlayer({
+  const celebritychatVideoPlayer({
     Key? key,
     required this.url,
     required this.play,
@@ -23,10 +23,11 @@ class SocialifiedVideoPlayer extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<SocialifiedVideoPlayer> createState() => _SocialifiedVideoPlayerState();
+  State<celebritychatVideoPlayer> createState() =>
+      _celebritychatVideoPlayerState();
 }
 
-class _SocialifiedVideoPlayerState extends State<SocialifiedVideoPlayer> {
+class _celebritychatVideoPlayerState extends State<celebritychatVideoPlayer> {
   final TvStreamingController _liveTvStreamingController = Get.find();
   TextEditingController messageTextField = TextEditingController();
   final SettingsController _settingsController = Get.find();
@@ -46,7 +47,7 @@ class _SocialifiedVideoPlayerState extends State<SocialifiedVideoPlayer> {
   } // This closing tag was missing
 
   @override
-  void didUpdateWidget(covariant SocialifiedVideoPlayer oldWidget) {
+  void didUpdateWidget(covariant celebritychatVideoPlayer oldWidget) {
     playVideo = widget.play;
 
     if (playVideo == true) {
@@ -90,11 +91,11 @@ class _SocialifiedVideoPlayerState extends State<SocialifiedVideoPlayer> {
                             allowFullScreen: false,
                             // fullScreenByDefault: true,
                             isLive:
-                            widget.tvModel?.isLiveBroadcasting == true &&
-                                widget.isPlayingTv == true,
+                                widget.tvModel?.isLiveBroadcasting == true &&
+                                    widget.isPlayingTv == true,
                             videoPlayerController: videoPlayerController!,
                             aspectRatio:
-                            videoPlayerController!.value.aspectRatio,
+                                videoPlayerController!.value.aspectRatio,
                             showControls: true,
                             showOptions: false,
                             // Prepare the video to be played and display the first frame
@@ -151,7 +152,7 @@ class _SocialifiedVideoPlayerState extends State<SocialifiedVideoPlayer> {
                         width: 250,
                         child: AppThemeButton(
                           text:
-                          '${subscribeUsingString.tr} (${widget.tvModel!.coinsNeededToUnlock} ${coinsString.tr})',
+                              '${subscribeUsingString.tr} (${widget.tvModel!.coinsNeededToUnlock} ${coinsString.tr})',
                           onPress: () {
                             _liveTvStreamingController
                                 .subscribeTv(widget.tvModel!, (status) {
@@ -161,8 +162,7 @@ class _SocialifiedVideoPlayerState extends State<SocialifiedVideoPlayer> {
                                   isFreeTimePlayed = false;
 
                                   AppUtil.showToast(
-                                      message:
-                                          youAreSubscribedNowString.tr,
+                                      message: youAreSubscribedNowString.tr,
                                       isSuccess: true);
 
                                   play();
@@ -178,26 +178,26 @@ class _SocialifiedVideoPlayerState extends State<SocialifiedVideoPlayer> {
           if (widget.orientation == Orientation.landscape)
             Obx(() => _liveTvStreamingController.showTopBar.value
                 ? Positioned(
-              left: 0,
-              right: 0,
-              top: 0,
-              child: Container(
-                height: 80,
-                color: AppColorConstants.themeColor.withOpacity(0.1),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ThemeIconWidget(
-                      ThemeIcon.backArrow,
-                      size: 18,
-                      color: AppColorConstants.iconColor,
-                    ).ripple(() {
-                      Get.back();
-                    }),
-                  ],
-                ).setPadding(left: 16, top: 28),
-              ),
-            )
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    child: Container(
+                      height: 80,
+                      color: AppColorConstants.themeColor.withOpacity(0.1),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          ThemeIconWidget(
+                            ThemeIcon.backArrow,
+                            size: 18,
+                            color: AppColorConstants.iconColor,
+                          ).ripple(() {
+                            Get.back();
+                          }),
+                        ],
+                      ).setPadding(left: 16, top: 28),
+                    ),
+                  )
                 : Container())
         ],
       ),
@@ -233,7 +233,7 @@ class _SocialifiedVideoPlayerState extends State<SocialifiedVideoPlayer> {
     });
     isFreeTimePlayed = false;
     videoPlayerController!.play().then(
-            (value) => {videoPlayerController!.addListener(checkVideoProgress)});
+        (value) => {videoPlayerController!.addListener(checkVideoProgress)});
 
     _liveTvStreamingController.joinTv(widget.tvModel!.id);
   }

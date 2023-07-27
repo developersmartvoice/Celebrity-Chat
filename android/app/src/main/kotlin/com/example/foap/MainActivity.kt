@@ -1,4 +1,4 @@
-package com.example.foap
+package com.smartvoice.celebritychat
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.FlutterEngine

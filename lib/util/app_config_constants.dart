@@ -7,7 +7,7 @@ final SettingsController settingsController = Get.find();
 
 class AppConfigConstants {
   // Name of app
-  static String appName = 'Socialified';
+  static String appName = 'celebritychat';
 
   static String currentVersion = '2.0';
   static const liveAppLink = 'https://www.google.com/';

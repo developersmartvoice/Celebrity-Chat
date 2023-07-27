@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "258656413911",
-    "project_id": "socialified-23223",
-    "storage_bucket": "socialified-23223.appspot.com"
+    "project_number": "435559272094",
+    "project_id": "celebrity-chat-6dfde",
+    "storage_bucket": "celebrity-chat-6dfde.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:258656413911:android:bfa88e695cffd921626892",
+        "mobilesdk_app_id": "1:435559272094:android:03130a7f8c44c6b68ef58f",
         "android_client_info": {
-          "package_name": "com.socialified"
+          "package_name": "com.smartvoice.celebritychat"
         }
       },
       "oauth_client": [
         {
-          "client_id": "258656413911-iv8cgfsd2khapjnbpse2ef2oan4d1hjt.apps.googleusercontent.com",
+          "client_id": "435559272094-d0dd6s8fcmccv8utlls98brni87ilkla.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDWN8fMFHp-PFXbY9Duu0uDsXJ-_DGSI9w"
+          "current_key": "AIzaSyC7zNOYIIiUOAQFvqSRea43y880AdPWDkM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "258656413911-iv8cgfsd2khapjnbpse2ef2oan4d1hjt.apps.googleusercontent.com",
+              "client_id": "435559272094-d0dd6s8fcmccv8utlls98brni87ilkla.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "435559272094-s1kjh660t83eb8a1gbdq1c2p9vat7g0c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.smartvoice.celebritychat"
+              }
             }
           ]
         }

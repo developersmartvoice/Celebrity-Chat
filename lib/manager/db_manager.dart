@@ -23,7 +23,7 @@ class DBManager {
 
   createDatabase() async {
     var databasesPath = await getDatabasesPath();
-    var path = p.join(databasesPath, 'socialified.db');
+    var path = p.join(databasesPath, 'celebritychat.db');
 
     try {
       await Directory(databasesPath).create(recursive: true);

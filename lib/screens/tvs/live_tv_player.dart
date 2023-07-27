@@ -104,7 +104,7 @@ class _LiveTvPlayerState extends State<LiveTvPlayer> {
                     divider().tP8,
                   ],
                 ),
-              SocialifiedVideoPlayer(
+              celebritychatVideoPlayer(
                 tvModel: widget.tvModel,
                 url: widget.tvModel.tvUrl,
                 play: false,
