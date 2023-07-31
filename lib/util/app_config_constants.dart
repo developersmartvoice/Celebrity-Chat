@@ -16,7 +16,7 @@ class AppConfigConstants {
   static const googleMapApiKey = 'add your google map api key';
   static const razorpayKey = '';
 
-  static const restApiBaseUrl = 'http://cchat.kaajbook.com/api/web/v1/';
+  static const restApiBaseUrl = 'http://celibritychatbd.com/api/web/v1/';
 
   static const socketApiBaseUrl = "your socket server url";
 
